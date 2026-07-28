@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Установка и обслуживание кондиционеров | [Название компании]</title>
-    <meta name="description" content="Продажа, монтаж и ремонт кондиционеров в [город]. VRF-системы. Бесплатный выезд специалиста.">
+    <title>РЈСЃС‚Р°РЅРѕРІРєР° Рё РѕР±СЃР»СѓР¶РёРІР°РЅРёРµ РєРѕРЅРґРёС†РёРѕРЅРµСЂРѕРІ РІ РњРѕСЃРєРІРµ | CoolService</title>
+    <meta name="description" content="РџСЂРѕРґР°Р¶Р°, РјРѕРЅС‚Р°Р¶ Рё СЂРµРјРѕРЅС‚ РєРѕРЅРґРёС†РёРѕРЅРµСЂРѕРІ РІ РњРѕСЃРєРІРµ. VRF-СЃРёСЃС‚РµРјС‹. Р‘РµСЃРїР»Р°С‚РЅС‹Р№ РІС‹РµР·Рґ СЃРїРµС†РёР°Р»РёСЃС‚Р°. Р“Р°СЂР°РЅС‚РёСЏ РґРѕ 3 Р»РµС‚.">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         *{margin:0;padding:0;box-sizing:border-box;}
@@ -33,6 +33,14 @@
         .adv-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:20px;}
         .adv-item{text-align:center;padding:20px;}
         .adv-item i{font-size:36px;color:#ffb703;margin-bottom:15px;}
+        .testimonials{padding:80px 0;background:#f0f9ff;}
+        .testimonials h2{text-align:center;margin-bottom:50px;font-size:2rem;color:#023e8a;}
+        .testimonial-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:30px;}
+        .testimonial-card{background:#fff;padding:25px;border-radius:15px;box-shadow:0 5px 15px rgba(0,0,0,0.05);text-align:center;}
+        .testimonial-card i.fa-star{color:#ffb703;margin:0 1px;}
+        .testimonial-card p{font-style:italic;margin:15px 0;color:#555;}
+        .testimonial-card h4{color:#0077b6;margin-bottom:5px;}
+        .testimonial-card .rating{margin-bottom:10px;}
         .tips{padding:80px 0;background:#e0f7fa;}
         .tips h2{text-align:center;margin-bottom:50px;font-size:2rem;color:#023e8a;}
         .tip-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:30px;}
@@ -50,6 +58,11 @@
             .hero h1{font-size:2rem;}
             .header-inner{flex-direction:column;gap:10px;}
         }
+        @media(max-width:480px){
+            .hero h1{font-size:1.5rem;}
+            .services h2,.advantages h2,.testimonials h2,.tips h2,.contact h2{font-size:1.5rem;}
+            .btn{padding:10px 20px;font-size:14px;}
+        }
     </style>
 </head>
 <body>
@@ -58,43 +71,43 @@
             <div class="logo">Cool<span>Service</span></div>
             <div>
                 <a href="tel:+71234567890" class="header-phone"><i class="fas fa-phone-alt"></i> +7 (123) 456-78-90</a>
-                <a href="#form" class="btn" style="margin-left:15px;">Заказать звонок</a>
+                <a href="#form" class="btn" style="margin-left:15px;">Р—Р°РєР°Р·Р°С‚СЊ Р·РІРѕРЅРѕРє</a>
             </div>
         </div>
     </header>
 
     <section class="hero">
         <div class="container">
-            <h1>Установка, обслуживание и ремонт кондиционеров</h1>
-            <p>Профессиональный монтаж VRF-систем, сплит-систем. Гарантия до 3 лет. Бесплатный выезд мастера.</p>
-            <a href="#form" class="btn">Рассчитать стоимость</a>
+            <h1>РЈСЃС‚Р°РЅРѕРІРєР°, РѕР±СЃР»СѓР¶РёРІР°РЅРёРµ Рё СЂРµРјРѕРЅС‚ РєРѕРЅРґРёС†РёРѕРЅРµСЂРѕРІ РІ РњРѕСЃРєРІРµ</h1>
+            <p>РџСЂРѕС„РµСЃСЃРёРѕРЅР°Р»СЊРЅС‹Р№ РјРѕРЅС‚Р°Р¶ VRF-СЃРёСЃС‚РµРј, СЃРїР»РёС‚-СЃРёСЃС‚РµРј. Р“Р°СЂР°РЅС‚РёСЏ РґРѕ 3 Р»РµС‚. Р‘РµСЃРїР»Р°С‚РЅС‹Р№ РІС‹РµР·Рґ РјР°СЃС‚РµСЂР°.</p>
+            <a href="#form" class="btn">Р Р°СЃСЃС‡РёС‚Р°С‚СЊ СЃС‚РѕРёРјРѕСЃС‚СЊ</a>
         </div>
-        <img src="https://images.unsplash.com/photo-1585771724684-38269d6639fd?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="Кондиционер VRF система" style="width:80%;max-width:900px;">
+        <img src="https://images.unsplash.com/photo-1585771724684-38269d6639fd?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="РљРѕРЅРґРёС†РёРѕРЅРµСЂ VRF СЃРёСЃС‚РµРјР°">
     </section>
 
     <section class="services" id="services">
         <div class="container">
-            <h2>Наши услуги</h2>
+            <h2>РќР°С€Рё СѓСЃР»СѓРіРё</h2>
             <div class="service-grid">
                 <div class="service-card">
                     <i class="fas fa-snowflake"></i>
-                    <h3>Продажа кондиционеров</h3>
-                    <p>Лучшие бренды: Daikin, Mitsubishi, LG, Toshiba. Поможем подобрать под ваш бюджет.</p>
+                    <h3>РџСЂРѕРґР°Р¶Р° РєРѕРЅРґРёС†РёРѕРЅРµСЂРѕРІ</h3>
+                    <p>Р›СѓС‡С€РёРµ Р±СЂРµРЅРґС‹: Daikin, Mitsubishi, LG, Toshiba. РџРѕРјРѕР¶РµРј РїРѕРґРѕР±СЂР°С‚СЊ РїРѕРґ РІР°С€ Р±СЋРґР¶РµС‚.</p>
                 </div>
                 <div class="service-card">
                     <i class="fas fa-tools"></i>
-                    <h3>Установка</h3>
-                    <p>Монтаж любой сложности (квартиры, коттеджи, офисы). Аккуратно и быстро.</p>
+                    <h3>РЈСЃС‚Р°РЅРѕРІРєР°</h3>
+                    <p>РњРѕРЅС‚Р°Р¶ Р»СЋР±РѕР№ СЃР»РѕР¶РЅРѕСЃС‚Рё (РєРІР°СЂС‚РёСЂС‹, РєРѕС‚С‚РµРґР¶Рё, РѕС„РёСЃС‹). РђРєРєСѓСЂР°С‚РЅРѕ Рё Р±С‹СЃС‚СЂРѕ.</p>
                 </div>
                 <div class="service-card">
                     <i class="fas fa-wrench"></i>
-                    <h3>Ремонт и обслуживание</h3>
-                    <p>Диагностика, заправка фреоном, чистка, замена компрессоров.</p>
+                    <h3>Р РµРјРѕРЅС‚ Рё РѕР±СЃР»СѓР¶РёРІР°РЅРёРµ</h3>
+                    <p>Р”РёР°РіРЅРѕСЃС‚РёРєР°, Р·Р°РїСЂР°РІРєР° С„СЂРµРѕРЅРѕРј, С‡РёСЃС‚РєР°, Р·Р°РјРµРЅР° РєРѕРјРїСЂРµСЃСЃРѕСЂРѕРІ.</p>
                 </div>
                 <div class="service-card">
                     <i class="fas fa-building"></i>
-                    <h3>VRF-системы</h3>
-                    <p>Проектирование и монтаж мультизональных систем для больших помещений.</p>
+                    <h3>VRF-СЃРёСЃС‚РµРјС‹</h3>
+                    <p>РџСЂРѕРµРєС‚РёСЂРѕРІР°РЅРёРµ Рё РјРѕРЅС‚Р°Р¶ РјСѓР»СЊС‚РёР·РѕРЅР°Р»СЊРЅС‹С… СЃРёСЃС‚РµРј РґР»СЏ Р±РѕР»СЊС€РёС… РїРѕРјРµС‰РµРЅРёР№.</p>
                 </div>
             </div>
         </div>
@@ -102,27 +115,60 @@
 
     <section class="advantages">
         <div class="container">
-            <h2>Почему выбирают нас</h2>
+            <h2>РџРѕС‡РµРјСѓ РІС‹Р±РёСЂР°СЋС‚ РЅР°СЃ</h2>
             <div class="adv-grid">
                 <div class="adv-item">
                     <i class="fas fa-medal"></i>
-                    <h3>10+ лет опыта</h3>
-                    <p>Более 500 выполненных проектов</p>
+                    <h3>10+ Р»РµС‚ РѕРїС‹С‚Р°</h3>
+                    <p>Р‘РѕР»РµРµ 500 РІС‹РїРѕР»РЅРµРЅРЅС‹С… РїСЂРѕРµРєС‚РѕРІ</p>
                 </div>
                 <div class="adv-item">
                     <i class="fas fa-shield-alt"></i>
-                    <h3>Гарантия качества</h3>
-                    <p>На монтаж до 3 лет, на оборудование – от производителя</p>
+                    <h3>Р“Р°СЂР°РЅС‚РёСЏ РєР°С‡РµСЃС‚РІР°</h3>
+                    <p>РќР° РјРѕРЅС‚Р°Р¶ РґРѕ 3 Р»РµС‚, РЅР° РѕР±РѕСЂСѓРґРѕРІР°РЅРёРµ вЂ“ РѕС‚ РїСЂРѕРёР·РІРѕРґРёС‚РµР»СЏ</p>
                 </div>
                 <div class="adv-item">
                     <i class="fas fa-truck"></i>
-                    <h3>Бесплатный выезд</h3>
-                    <p>В пределах города – бесплатно, за город – по договоренности</p>
+                    <h3>Р‘РµСЃРїР»Р°С‚РЅС‹Р№ РІС‹РµР·Рґ</h3>
+                    <p>Р’ РїСЂРµРґРµР»Р°С… РњРѕСЃРєРІС‹ вЂ“ Р±РµСЃРїР»Р°С‚РЅРѕ, Р·Р° РњРљРђР” вЂ“ РїРѕ РґРѕРіРѕРІРѕСЂРµРЅРЅРѕСЃС‚Рё</p>
                 </div>
                 <div class="adv-item">
                     <i class="fas fa-certificate"></i>
-                    <h3>Сертифицированные монтажники</h3>
-                    <p>Регулярное обучение и допуски к работе с фреоном</p>
+                    <h3>РЎРµСЂС‚РёС„РёС†РёСЂРѕРІР°РЅРЅС‹Рµ РјРѕРЅС‚Р°Р¶РЅРёРєРё</h3>
+                    <p>Р РµРіСѓР»СЏСЂРЅРѕРµ РѕР±СѓС‡РµРЅРёРµ Рё РґРѕРїСѓСЃРєРё Рє СЂР°Р±РѕС‚Рµ СЃ С„СЂРµРѕРЅРѕРј</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======= Р‘Р›РћРљ РћРўР—Р«Р’РћР’ ======= -->
+    <section class="testimonials">
+        <div class="container">
+            <h2>РћС‚Р·С‹РІС‹ РЅР°С€РёС… РєР»РёРµРЅС‚РѕРІ</h2>
+            <div class="testimonial-grid">
+                <div class="testimonial-card">
+                    <div class="rating">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p>В«РћС‡РµРЅСЊ РґРѕРІРѕР»СЊРЅС‹ СѓСЃС‚Р°РЅРѕРІРєРѕР№ РєРѕРЅРґРёС†РёРѕРЅРµСЂР°! Р’СЃС‘ СЃРґРµР»Р°Р»Рё Р°РєРєСѓСЂР°С‚РЅРѕ, Р±С‹СЃС‚СЂРѕ. Р РµРєРѕРјРµРЅРґСѓСЋ!В»</p>
+                    <h4>РђРЅРЅР° РРІР°РЅРѕРІР°</h4>
+                    <small>РєРІР°СЂС‚РёСЂР°, РњРѕСЃРєРІР°</small>
+                </div>
+                <div class="testimonial-card">
+                    <div class="rating">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p>В«РћР±СЂР°С‰Р°Р»РёСЃСЊ РґР»СЏ РѕР±СЃР»СѓР¶РёРІР°РЅРёСЏ VRF-СЃРёСЃС‚РµРјС‹ РІ РѕС„РёСЃРµ. Р’СЃС‘ С‡С‘С‚РєРѕ, РїРѕ РґРѕРіРѕРІРѕСЂС‘РЅРЅРѕСЃС‚Рё. РЎРїР°СЃРёР±Рѕ!В»</p>
+                    <h4>РЎРµСЂРіРµР№ РџРµС‚СЂРѕРІ</h4>
+                    <small>РѕС„РёСЃ, Р‘Р¦ "РђС‚Р»Р°РЅС‚"</small>
+                </div>
+                <div class="testimonial-card">
+                    <div class="rating">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p>В«РћРїРµСЂР°С‚РёРІРЅРѕ РїСЂРёРµС…Р°Р»Рё, Р±С‹СЃС‚СЂРѕ РЅР°С€Р»Рё РЅРµРёСЃРїСЂР°РІРЅРѕСЃС‚СЊ. Р¦РµРЅР° Р°РґРµРєРІР°С‚РЅР°СЏ. Р‘СѓРґСѓ РѕР±СЂР°С‰Р°С‚СЊСЃСЏ РµС‰С‘!В»</p>
+                    <h4>Р•Р»РµРЅР° РЎРјРёСЂРЅРѕРІР°</h4>
+                    <small>РґРѕРј, РњРѕСЃРєРѕРІСЃРєР°СЏ РѕР±Р»Р°СЃС‚СЊ</small>
                 </div>
             </div>
         </div>
@@ -130,23 +176,23 @@
 
     <section class="tips">
         <div class="container">
-            <h2>Полезные советы по уходу за кондиционером</h2>
+            <h2>РџРѕР»РµР·РЅС‹Рµ СЃРѕРІРµС‚С‹ РїРѕ СѓС…РѕРґСѓ Р·Р° РєРѕРЅРґРёС†РёРѕРЅРµСЂРѕРј</h2>
             <div class="tip-grid">
                 <div class="tip-card">
-                    <h3>Как чистить фильтры?</h3>
-                    <p>Раз в месяц снимайте переднюю панель, вынимайте фильтры, промывайте тёплой водой с мылом, сушите и ставьте обратно. Это продлевает срок службы и улучшает качество воздуха.</p>
+                    <h3>РљР°Рє С‡РёСЃС‚РёС‚СЊ С„РёР»СЊС‚СЂС‹?</h3>
+                    <p>Р Р°Р· РІ РјРµСЃСЏС† СЃРЅРёРјР°Р№С‚Рµ РїРµСЂРµРґРЅСЋСЋ РїР°РЅРµР»СЊ, РІС‹РЅРёРјР°Р№С‚Рµ С„РёР»СЊС‚СЂС‹, РїСЂРѕРјС‹РІР°Р№С‚Рµ С‚С‘РїР»РѕР№ РІРѕРґРѕР№ СЃ РјС‹Р»РѕРј, СЃСѓС€РёС‚Рµ Рё СЃС‚Р°РІСЊС‚Рµ РѕР±СЂР°С‚РЅРѕ. Р­С‚Рѕ РїСЂРѕРґР»РµРІР°РµС‚ СЃСЂРѕРє СЃР»СѓР¶Р±С‹ Рё СѓР»СѓС‡С€Р°РµС‚ РєР°С‡РµСЃС‚РІРѕ РІРѕР·РґСѓС…Р°.</p>
                 </div>
                 <div class="tip-card">
-                    <h3>Когда нужна заправка фреоном?</h3>
-                    <p>Если кондиционер стал хуже охлаждать, появился иней на трубках или слышно шипение – возможно, утечка. Вызовите мастера для диагностики и дозаправки.</p>
+                    <h3>РљРѕРіРґР° РЅСѓР¶РЅР° Р·Р°РїСЂР°РІРєР° С„СЂРµРѕРЅРѕРј?</h3>
+                    <p>Р•СЃР»Рё РєРѕРЅРґРёС†РёРѕРЅРµСЂ СЃС‚Р°Р» С…СѓР¶Рµ РѕС…Р»Р°Р¶РґР°С‚СЊ, РїРѕСЏРІРёР»СЃСЏ РёРЅРµР№ РЅР° С‚СЂСѓР±РєР°С… РёР»Рё СЃР»С‹С€РЅРѕ С€РёРїРµРЅРёРµ вЂ“ РІРѕР·РјРѕР¶РЅРѕ, СѓС‚РµС‡РєР°. Р’С‹Р·РѕРІРёС‚Рµ РјР°СЃС‚РµСЂР° РґР»СЏ РґРёР°РіРЅРѕСЃС‚РёРєРё Рё РґРѕР·Р°РїСЂР°РІРєРё.</p>
                 </div>
                 <div class="tip-card">
-                    <h3>Нужно ли делать ТО каждый год?</h3>
-                    <p>Да! Ежегодное сервисное обслуживание включает чистку теплообменника, проверку дренажа, давления фреона – это снижает риск поломок летом.</p>
+                    <h3>РќСѓР¶РЅРѕ Р»Рё РґРµР»Р°С‚СЊ РўРћ РєР°Р¶РґС‹Р№ РіРѕРґ?</h3>
+                    <p>Р”Р°! Р•Р¶РµРіРѕРґРЅРѕРµ СЃРµСЂРІРёСЃРЅРѕРµ РѕР±СЃР»СѓР¶РёРІР°РЅРёРµ РІРєР»СЋС‡Р°РµС‚ С‡РёСЃС‚РєСѓ С‚РµРїР»РѕРѕР±РјРµРЅРЅРёРєР°, РїСЂРѕРІРµСЂРєСѓ РґСЂРµРЅР°Р¶Р°, РґР°РІР»РµРЅРёСЏ С„СЂРµРѕРЅР° вЂ“ СЌС‚Рѕ СЃРЅРёР¶Р°РµС‚ СЂРёСЃРє РїРѕР»РѕРјРѕРє Р»РµС‚РѕРј.</p>
                 </div>
                 <div class="tip-card">
-                    <h3>Как выбрать мощность кондиционера?</h3>
-                    <p>Для комнаты 20 кв. метров подойдёт модель 7000-9000 BTU. Лучше доверить расчёт специалисту – он учтёт высоту потолков, количество людей и тепловыделение техники.</p>
+                    <h3>РљР°Рє РІС‹Р±СЂР°С‚СЊ РјРѕС‰РЅРѕСЃС‚СЊ РєРѕРЅРґРёС†РёРѕРЅРµСЂР°?</h3>
+                    <p>Р”Р»СЏ РєРѕРјРЅР°С‚С‹ 20 РєРІ. РјРµС‚СЂРѕРІ РїРѕРґРѕР№РґС‘С‚ РјРѕРґРµР»СЊ 7000-9000 BTU. Р›СѓС‡С€Рµ РґРѕРІРµСЂРёС‚СЊ СЂР°СЃС‡С‘С‚ СЃРїРµС†РёР°Р»РёСЃС‚Сѓ вЂ“ РѕРЅ СѓС‡С‚С‘С‚ РІС‹СЃРѕС‚Сѓ РїРѕС‚РѕР»РєРѕРІ, РєРѕР»РёС‡РµСЃС‚РІРѕ Р»СЋРґРµР№ Рё С‚РµРїР»РѕРІС‹РґРµР»РµРЅРёРµ С‚РµС…РЅРёРєРё.</p>
                 </div>
             </div>
         </div>
@@ -154,32 +200,31 @@
 
     <section class="contact" id="form">
         <div class="container">
-            <h2>Свяжитесь с нами</h2>
+            <h2>РЎРІСЏР¶РёС‚РµСЃСЊ СЃ РЅР°РјРё</h2>
             <div class="contact-info">
                 <p><i class="fas fa-phone-alt"></i> +7 (123) 456-78-90</p>
                 <p><i class="fas fa-envelope"></i> info@coolservice.ru</p>
-                <p><i class="fas fa-map-marker-alt"></i> г. [Твой город], ул. Примерная, д. 10</p>
+                <p><i class="fas fa-map-marker-alt"></i> Рі. РњРѕСЃРєРІР°, СѓР». РўРІРµСЂСЃРєР°СЏ, Рґ. 1</p>
             </div>
-            <form>
-                <input type="text" placeholder="Ваше имя" required>
-                <input type="tel" placeholder="Номер телефона" required>
-                <textarea placeholder="Опишите задачу или вопрос"></textarea>
-                <button type="submit" class="btn" style="width:100%;">Отправить заявку</button>
+            <form action="#" method="POST">
+                <input type="text" placeholder="Р’Р°С€Рµ РёРјСЏ" required>
+                <input type="tel" placeholder="РќРѕРјРµСЂ С‚РµР»РµС„РѕРЅР°" required>
+                <textarea placeholder="РћРїРёС€РёС‚Рµ Р·Р°РґР°С‡Сѓ РёР»Рё РІРѕРїСЂРѕСЃ"></textarea>
+                <button type="submit" class="btn" style="width:100%;">РћС‚РїСЂР°РІРёС‚СЊ Р·Р°СЏРІРєСѓ</button>
             </form>
         </div>
     </section>
 
     <footer>
         <div class="container">
-            <p>© 2025 CoolService. Все права защищены.</p>
+            <p>В© 2025 CoolService. Р’СЃРµ РїСЂР°РІР° Р·Р°С‰РёС‰РµРЅС‹.</p>
         </div>
     </footer>
 
     <script>
-        // Простая обработка формы (пока просто очищает)
         document.querySelector('form').addEventListener('submit', function(e){
             e.preventDefault();
-            alert('Спасибо! Мы свяжемся с вами в ближайшее время.');
+            alert('РЎРїР°СЃРёР±Рѕ! РњС‹ СЃРІСЏР¶РµРјСЃСЏ СЃ РІР°РјРё РІ Р±Р»РёР¶Р°Р№С€РµРµ РІСЂРµРјСЏ.');
             this.reset();
         });
     </script>
