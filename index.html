@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Установка и обслуживание кондиционеров | [Название компании]</title>
+    <meta name="description" content="Продажа, монтаж и ремонт кондиционеров в [город]. VRF-системы. Бесплатный выезд специалиста.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        *{margin:0;padding:0;box-sizing:border-box;}
+        body{font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;color:#333;line-height:1.6;}
+        .container{width:90%;max-width:1200px;margin:auto;}
+        header{background:#fff;box-shadow:0 2px 10px rgba(0,0,0,0.1);padding:15px 0;position:sticky;top:0;z-index:100;}
+        .header-inner{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;}
+        .logo{font-size:24px;font-weight:700;color:#0077b6;}
+        .logo span{color:#ffb703;}
+        .header-phone{font-size:18px;font-weight:600;color:#0077b6;}
+        .btn{display:inline-block;padding:12px 28px;background:#0077b6;color:#fff;text-decoration:none;border-radius:30px;font-weight:600;transition:0.3s;border:none;cursor:pointer;}
+        .btn:hover{background:#005f8a;transform:translateY(-2px);}
+        .hero{background:linear-gradient(135deg,#e0f7fa 0%,#fff 100%);padding:80px 0;text-align:center;}
+        .hero h1{font-size:2.5rem;margin-bottom:20px;color:#023e8a;}
+        .hero p{font-size:1.2rem;margin-bottom:30px;color:#555;}
+        .hero img{max-width:100%;height:auto;margin-top:30px;border-radius:20px;box-shadow:0 15px 30px rgba(0,0,0,0.1);}
+        .services{padding:80px 0;background:#f9f9f9;}
+        .services h2{text-align:center;margin-bottom:50px;font-size:2rem;color:#023e8a;}
+        .service-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:30px;}
+        .service-card{background:#fff;padding:30px;border-radius:15px;text-align:center;box-shadow:0 5px 15px rgba(0,0,0,0.05);transition:0.3s;}
+        .service-card:hover{transform:translateY(-10px);box-shadow:0 10px 25px rgba(0,0,0,0.1);}
+        .service-card i{font-size:40px;color:#0077b6;margin-bottom:20px;}
+        .service-card h3{margin-bottom:10px;color:#023e8a;}
+        .advantages{padding:80px 0;}
+        .advantages h2{text-align:center;margin-bottom:50px;font-size:2rem;color:#023e8a;}
+        .adv-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:20px;}
+        .adv-item{text-align:center;padding:20px;}
+        .adv-item i{font-size:36px;color:#ffb703;margin-bottom:15px;}
+        .tips{padding:80px 0;background:#e0f7fa;}
+        .tips h2{text-align:center;margin-bottom:50px;font-size:2rem;color:#023e8a;}
+        .tip-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:30px;}
+        .tip-card{background:#fff;padding:25px;border-radius:15px;box-shadow:0 5px 15px rgba(0,0,0,0.05);}
+        .tip-card h3{color:#0077b6;margin-bottom:10px;}
+        .contact{padding:80px 0;background:#023e8a;color:#fff;text-align:center;}
+        .contact h2{color:#fff;margin-bottom:30px;}
+        .contact-info p{font-size:1.2rem;margin:10px 0;}
+        .contact-info i{margin-right:10px;}
+        .contact form{max-width:500px;margin:40px auto 0;}
+        .contact input,.contact textarea{width:100%;padding:15px;margin-bottom:15px;border:none;border-radius:8px;font-size:16px;}
+        .contact textarea{resize:vertical;height:120px;}
+        footer{background:#001d3d;color:#fff;text-align:center;padding:20px 0;}
+        @media(max-width:768px){
+            .hero h1{font-size:2rem;}
+            .header-inner{flex-direction:column;gap:10px;}
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container header-inner">
+            <div class="logo">Cool<span>Service</span></div>
+            <div>
+                <a href="tel:+71234567890" class="header-phone"><i class="fas fa-phone-alt"></i> +7 (123) 456-78-90</a>
+                <a href="#form" class="btn" style="margin-left:15px;">Заказать звонок</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Установка, обслуживание и ремонт кондиционеров</h1>
+            <p>Профессиональный монтаж VRF-систем, сплит-систем. Гарантия до 3 лет. Бесплатный выезд мастера.</p>
+            <a href="#form" class="btn">Рассчитать стоимость</a>
+        </div>
+        <img src="https://images.unsplash.com/photo-1585771724684-38269d6639fd?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="Кондиционер VRF система" style="width:80%;max-width:900px;">
+    </section>
+
+    <section class="services" id="services">
+        <div class="container">
+            <h2>Наши услуги</h2>
+            <div class="service-grid">
+                <div class="service-card">
+                    <i class="fas fa-snowflake"></i>
+                    <h3>Продажа кондиционеров</h3>
+                    <p>Лучшие бренды: Daikin, Mitsubishi, LG, Toshiba. Поможем подобрать под ваш бюджет.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-tools"></i>
+                    <h3>Установка</h3>
+                    <p>Монтаж любой сложности (квартиры, коттеджи, офисы). Аккуратно и быстро.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-wrench"></i>
+                    <h3>Ремонт и обслуживание</h3>
+                    <p>Диагностика, заправка фреоном, чистка, замена компрессоров.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-building"></i>
+                    <h3>VRF-системы</h3>
+                    <p>Проектирование и монтаж мультизональных систем для больших помещений.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="advantages">
+        <div class="container">
+            <h2>Почему выбирают нас</h2>
+            <div class="adv-grid">
+                <div class="adv-item">
+                    <i class="fas fa-medal"></i>
+                    <h3>10+ лет опыта</h3>
+                    <p>Более 500 выполненных проектов</p>
+                </div>
+                <div class="adv-item">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Гарантия качества</h3>
+                    <p>На монтаж до 3 лет, на оборудование – от производителя</p>
+                </div>
+                <div class="adv-item">
+                    <i class="fas fa-truck"></i>
+                    <h3>Бесплатный выезд</h3>
+                    <p>В пределах города – бесплатно, за город – по договоренности</p>
+                </div>
+                <div class="adv-item">
+                    <i class="fas fa-certificate"></i>
+                    <h3>Сертифицированные монтажники</h3>
+                    <p>Регулярное обучение и допуски к работе с фреоном</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="tips">
+        <div class="container">
+            <h2>Полезные советы по уходу за кондиционером</h2>
+            <div class="tip-grid">
+                <div class="tip-card">
+                    <h3>Как чистить фильтры?</h3>
+                    <p>Раз в месяц снимайте переднюю панель, вынимайте фильтры, промывайте тёплой водой с мылом, сушите и ставьте обратно. Это продлевает срок службы и улучшает качество воздуха.</p>
+                </div>
+                <div class="tip-card">
+                    <h3>Когда нужна заправка фреоном?</h3>
+                    <p>Если кондиционер стал хуже охлаждать, появился иней на трубках или слышно шипение – возможно, утечка. Вызовите мастера для диагностики и дозаправки.</p>
+                </div>
+                <div class="tip-card">
+                    <h3>Нужно ли делать ТО каждый год?</h3>
+                    <p>Да! Ежегодное сервисное обслуживание включает чистку теплообменника, проверку дренажа, давления фреона – это снижает риск поломок летом.</p>
+                </div>
+                <div class="tip-card">
+                    <h3>Как выбрать мощность кондиционера?</h3>
+                    <p>Для комнаты 20 кв. метров подойдёт модель 7000-9000 BTU. Лучше доверить расчёт специалисту – он учтёт высоту потолков, количество людей и тепловыделение техники.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="form">
+        <div class="container">
+            <h2>Свяжитесь с нами</h2>
+            <div class="contact-info">
+                <p><i class="fas fa-phone-alt"></i> +7 (123) 456-78-90</p>
+                <p><i class="fas fa-envelope"></i> info@coolservice.ru</p>
+                <p><i class="fas fa-map-marker-alt"></i> г. [Твой город], ул. Примерная, д. 10</p>
+            </div>
+            <form>
+                <input type="text" placeholder="Ваше имя" required>
+                <input type="tel" placeholder="Номер телефона" required>
+                <textarea placeholder="Опишите задачу или вопрос"></textarea>
+                <button type="submit" class="btn" style="width:100%;">Отправить заявку</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>© 2025 CoolService. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Простая обработка формы (пока просто очищает)
+        document.querySelector('form').addEventListener('submit', function(e){
+            e.preventDefault();
+            alert('Спасибо! Мы свяжемся с вами в ближайшее время.');
+            this.reset();
+        });
+    </script>
+</body>
+</html>
